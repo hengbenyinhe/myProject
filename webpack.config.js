@@ -43,27 +43,6 @@ module.exports = {
         ,port: 8010 // 端口号
         ,open:false // 自动打开浏览器
         ,proxy: {
-            '/kong/auth': {
-                target: 'http://localhost:8008',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/kong/auth': ''
-                }
-            },
-            '/kong/rightmanage': {
-                target: 'http://localhost:8008',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/kong': ''
-                }
-            },
-            '/kong/': {
-                target: 'http://192.168.101.31:8000',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/kong': ''
-                }
-            }
         },
     },
     //开发环境启用source-map
