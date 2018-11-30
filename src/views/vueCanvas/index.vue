@@ -6,7 +6,7 @@
         是的，我输入的的确是：<input v-model="val" style="width:300px;"></input><br/>
         <input v-model="val2" style="width:500px;"></input>
         <p>*************************************************我是华丽的分割线*******************************************</p>-->      
-        <div style="border-bottom: 1px solid #000;text-align: left">
+        <div style="border-bottom: 1px solid #000;text-align: left;height:30px;">
             <span style="margin-left:20px;">工具栏</span>
             <button @click="insert" style="margin-left:20px;">新增</button>
             <button @click="del" style="margin-left:20px;">删除</button>
@@ -30,8 +30,8 @@
 </template>
 
 <script>
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    const width = window.innerWidth-16*16;
+    const height = window.innerHeight-60;
     let vm = {};
     export default {
         data() {
