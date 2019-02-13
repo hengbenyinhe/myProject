@@ -1,6 +1,7 @@
 <template>
     <el-container style="width:100%;height:100%">
-        <el-aside width="16em"><my-sidebar></my-sidebar></el-aside>
+        <el-aside width="16em"><my-sidebar></my-sidebar>
+        </el-aside>
         <el-container class="container-wrapper">
             <!--<el-header class="main-header"><myHeader/></el-header>-->
             <el-main class="main-container"><router-view/></el-main>
@@ -11,11 +12,12 @@
 import mySidebar from './components/my_sidebar.vue';
 // import myheader from './components/my_header.vue';
 export default {
-    components: {
-        'mySidebar': mySidebar
+    components: {  //第二步
+        mySidebar
     },
     data() {
         return {
+
         };
     },
     computed: {
@@ -25,6 +27,7 @@ export default {
     destroyed: function() {
     },
     methods: {
+
     }
 };
 </script>

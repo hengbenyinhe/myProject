@@ -7,7 +7,7 @@
                     <i class="el-icon-date"></i>画布
                 </el-menu-item>
                 <el-menu-item index="/views/test">
-                    <i class="el-icon-edit-outline"></i>测试页一
+                    <i class="el-icon-edit-outline"></i>父子组件传值测试页
                 </el-menu-item>
             </el-submenu>
         </el-menu>
@@ -16,6 +16,7 @@
 
 <script>
     export default {
+        props:['test'],
         data() {
             return {
                 data: null
